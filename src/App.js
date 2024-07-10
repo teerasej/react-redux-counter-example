@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Counter from './components/Counter';
 import AddNumber from './components/AddNumber';
+import SubtractNumber from './components/SubtractNumber';
 
 import { Provider } from "react-redux";
 import configureStore from "./redux/store";
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Counter/>
         <AddNumber/>
+        <SubtractNumber/>
       </div>
     </Provider>
   );
