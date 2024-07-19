@@ -11,6 +11,10 @@ export default (state = initialState, { type, payload }) => {
         console.log(type, payload)
         return { ...state, count: state.count + payload }
 
+    case action.Actions.SUBTRACT_NUMBER:
+        console.log(type, payload)
+        return { ...state, count: state.count - payload }
+
     default:
         return state
     }
